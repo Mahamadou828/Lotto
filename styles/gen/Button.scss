@@ -1,0 +1,51 @@
+.btn {
+  &-primary {
+    background-color: #262180;
+  }
+
+  &-secondary {
+    border: 1px solid $input-color-pl !important;
+    border-radius: 5px !important;
+  }
+
+  &-nav {
+    &_item {
+      height: 30px !important;
+      width: 75px !important;
+      display: flex; 
+      justify-content: center; 
+      align-items: center; 
+    }
+  }
+
+  &-small {
+    width: 37px;
+    height: 37px;
+  }
+
+  &-medium {
+    padding: 3px 20px;
+    border-radius: 5px;
+  }
+  &-nav {
+    color: $font-primary-color !important;
+    max-width: 270px;
+    margin-bottom: 20px !important;
+    border-radius: 5px !important;
+    padding: 8px 30px !important;
+    transition: all ease-in 0.3s;
+
+    &:hover {
+      background-color: $secondary-bg !important;
+      color: $white !important;
+
+      .btn-nav_icon {
+        color: $white !important;
+      }
+    }
+
+    &_icon {
+      color: $font-primary-color;
+    }
+  }
+}

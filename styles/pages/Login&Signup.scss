@@ -1,0 +1,113 @@
+$form-bg: #0093ff;
+
+.auth {
+  height: 100vh;
+  max-height: 100vh;
+  min-height: 100vh;
+  // width: 100%;
+  &-bg {
+    &__container {
+      flex: 1.1;
+      height: 100%;
+      background-color: $secondary-color;
+      @extend .d-flex;
+      @extend .d-column;
+      @extend .d-alignCenter;
+    }
+
+    &__img {
+      max-width: 70%;
+    }
+  }
+
+  &-form {
+    @extend .d-flex;
+    @extend .d-column;
+    margin-top: 40px;
+    &__container {
+      color: $white;
+      flex: 2;
+      //padding: 0px 100px;
+      background-color: $form-bg;
+      //color: $white;
+      @extend .d-flex;
+      // @extend .d-column;
+      @extend .d-center;
+      // @extend .d-align;
+    }
+
+    &-items {
+      margin-top: 140px;
+      width: 340px;
+
+      h3 {
+        font-size: 22px;
+        line-height: 1.4;
+        font-weight: 600;
+        margin-bottom: 0;
+      }
+
+      p {
+        margin-top: 8px;
+        font-size: 18px;
+        font-weight: 300;
+        font-family: $ternary-font;
+      }
+
+      .form-input {
+        background-color: $white;
+        margin-bottom: 15px;
+        color: $input-color-pl;
+        border: 0;
+        padding: 12px 20px;
+        outline: none;
+        border-radius: 6px;
+        font-size: 15px;
+        font-weight: 300px;
+        font-family: $ternary-font;
+      }
+
+      .btn-container {
+        margin-top: 20px;
+
+        a {
+          color: $white;
+          font-size: 13px;
+          font-weight: 700;
+        }
+      }
+
+      .btn-login {
+        background-color: $white;
+        color: $secondary-color;
+        padding: 8px 25px;
+        font-size: 14px;
+        font-weight: bold;
+        border: none;
+        border-radius: 6px;
+        margin-right: 15px;
+        outline: none;
+        cursor: pointer;
+        transition: all ease-in 0.3s;
+
+        &:hover {
+          box-shadow: 0 5px 5px rgb(0 0 0 / 16%);
+        }
+      }
+    }
+
+    &__link {
+      color: $white;
+      font-weight: 500;
+      margin-right: 20px;
+      border-bottom: 2px solid $white;
+      padding-bottom: 7px;
+      opacity: 0.7;
+      transition: all ease-in 0.3s;
+      &:hover {
+        opacity: 1;
+        padding-bottom: 1px;
+      }
+    }
+  }
+}
